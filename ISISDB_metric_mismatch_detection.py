@@ -7,7 +7,6 @@ Script also detects any routers which has got max-metric value on its interface,
 	Justification - We have seen such max-metric values causing traffic not to take valid path resulting in outages in customer network and rechability issues.
 
 Author : Sudeep Valengattil
-Email  : svalenga@cisco.com
 
 """
 
@@ -21,7 +20,7 @@ name = str
 output = set()
 maxmetric = set()
 
-with open ('bbr01mtpkca_isisdb.txt', 'r') as f:      ###  Point file system path/filename to text file containing ISIS DB detail output"
+with open ('isisdb.txt', 'r') as f:      ###  Point file system path/filename to text file containing ISIS DB detail output"
 
 	for line in f:
 
