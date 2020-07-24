@@ -112,7 +112,7 @@ for line in output:
 	elif "prr" in line or "PRR" in line or "bbr" in line or "BBR" in line or "BCR" in line:
 		backbone+=1
 	else:
-		other+=1
+		core+=1
 
 ### Below code is needed to detect routers in network, which has max-metric appled due to reasons like config error or mpls ldp sync issues ###
 
